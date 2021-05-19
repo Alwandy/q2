@@ -14,7 +14,6 @@ while [ $# -gt 0 ]; do
 done
 
 hostname=$(python3 main.py $awsprofile $region $ec2name)
-SUB='Linux'
 if [[ "$hostname" == *"[ERROR]"* ]]; then
   echo $hostname
 else 
